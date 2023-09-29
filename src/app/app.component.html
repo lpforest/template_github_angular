@@ -1,0 +1,10 @@
+
+
+<label for="address">Adresse à géocoder:</label><br/><br/>
+<input type="text" id="address" name="address" value="" [formControl]="address"><br/><br/>
+<button (click)="apiGeocode()">Géocoder</button>
+
+
+<p>Addresse enregistrée dans le composant: {{ address.value }}</p>
+
+<p>Latitude et longitude: {{ coords[0] }} - {{ coords[1] }}</p>
